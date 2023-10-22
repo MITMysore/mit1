@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIT Degree College</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo">
+                <div class="logo"></div>
+            </div>
+            <div class="nav-address">
+                <p class="add-first">Maharaja Education Trust <i class="fa-regular fa-registered"></i> Mysuru</p>
+                <p class="add-second">Maharja Institute of Technology Mysore</p>
+                <p class="add-third">ಮಹಾರಾಜ ತಂತ್ರಕ ವಿದ್ಯಾಲಯ ಮೈಸೂರು</p>
+                <p class="add-fourth">Approved by AICTE,New Delhi,Recognized by GoK,Affiliated to VTU Belagavi</p>
+                <p class="add-icon"><i class="fa-solid fa-phone fa-l"></i></p> 
+                <p class="add-ph1">9620228021</p>
+                <p class="add-ph2">9620228022</p>
+                <p class="add-mit">MITM</p>
+            </div>
+        </div>
+        <nav>
+        <div class="panel">
+            <div class="panel-ops" id="panelLinks">
+                <i class="fa fa-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">ABOUT</a><i class="fa-solid fa-angle-down"></i></li>
+                    <li><a href="#">ACADEMICS</a> <i class="fa-solid fa-angle-down"></i></li>
+                    <li><a href="#">ADMINISTRATION</a><i class="fa-solid fa-angle-down"></i></li>
+                    <li><a href="#">ADMISSIONS</a><i class="fa-solid fa-angle-down"></i></li>
+                    <li><a href="#">COMMITTEES</a><i class="fa-solid fa-angle-down"></i></li>
+                    <li><a href="#">CAMPUS LIFE</a><i class="fa-solid fa-angle-down"></i></li>
+                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </div>
+    </nav>
+</header>
+    <div class="hero-section">
+        <div class="hero-message">
+            <p>Learn&nbsp;From&nbsp;The</p>
+            <p>Best&nbsp;&nbsp;&nbsp;&nbsp;Degree</p>
+            <p>College&nbsp;&nbsp;in&nbsp;&nbsp;the </p>
+            <p>world</p>
+        </div>
+        <div class="hero-button">
+            <button class="lrn-button">Learn More</button>
+            <button class="abt-button">About Us</button>
+        </div>
+    </div>
+
+    <div class="hero-pannel">
+        <ul>
+           <li>College</li> 
+        </ul>
+    </div>
+
+<!--------JavaScript for Toggle menu---------->
+
+<script>
+
+    var panelLinks = document.getElementById("panelLinks");
+
+    function showmenu(){
+        panelLinks.style.right ="0";
+    }
+
+    function hidemenu(){
+        panelLinks.style.right ="-200px";
+    }
+</script> 
+
+
+</body>
+</html>
